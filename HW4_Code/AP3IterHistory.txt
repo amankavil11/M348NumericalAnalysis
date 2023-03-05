@@ -1,0 +1,117 @@
+Solves the problem f(x) = 0 using Newton's method
+Enter guess at root: -2
+Enter tolerance: 0.5e-6
+Enter maxIteration: 8
+Monitor iterations? (1/0): 1
+Guess: x = -2, error = 0.618702
+Iter 1: x = -1.76660682226, error = 0.385308822262, error_ratio_quad = 1.00657447484, error_ratio_linear = 0.622769640735
+Iter 2: x = -1.59122261808, error = 0.209924618075, error_ratio_quad = 1.41398715987, error_ratio_linear = 0.544821727265
+Iter 3: x = -1.47107422066, error = 0.0897762206577, error_ratio_quad = 2.03720425851, error_ratio_linear = 0.427659325908
+Iter 4: x = -1.40487900761, error = 0.0235810076144, error_ratio_quad = 2.92576689067, error_ratio_linear = 0.26266429397
+Iter 5: x = -1.38344307116, error = 0.00214507115804, error_ratio_quad = 3.85759816537, error_ratio_linear = 0.0909660517107
+Iter 6: x = -1.381318265, error = 2.02650016747e-05, error_ratio_quad = 4.40416150813, error_ratio_linear = 0.00944723982643
+Iter 7: x = -1.38129848375, error = 4.83746852797e-07, error_ratio_quad = 1177.94459738, error_ratio_linear = 0.0238710492386
+Iter 8: x = -1.38129848204, error = 4.82043995165e-07, error_ratio_quad = 2059920.08465, error_ratio_linear = 0.996479857961
+The root is -1.381298
+The number of iterations is 8
+Quadratic Convergence 
+
+Solves the problem f(x) = 0 using Newton's method
+Enter guess at root: -0.8
+Enter tolerance: 0.5e-6
+Enter maxIteration: 19
+Monitor iterations? (1/0): 1
+Guess: x = -0.8, error = 0.133333
+Iter 1: x = -0.735690620359, error = 0.0690236203587, error_ratio_quad = 3.88259805814, error_ratio_linear = 0.517678446887
+Iter 2: x = -0.702157982591, error = 0.0354909825911, error_ratio_quad = 7.44942159829, error_ratio_linear = 0.514186048292
+Iter 3: x = -0.684719891545, error = 0.0180528915451, error_ratio_quad = 14.3321295977, error_ratio_linear = 0.508661362044
+Iter 4: x = -0.675779596799, error = 0.00911259679892, error_ratio_quad = 27.9607366115, error_ratio_linear = 0.504772145568
+Iter 5: x = -0.67124602415, error = 0.00457902415036, error_ratio_quad = 55.1427758916, error_ratio_linear = 0.502493883073
+Iter 6: x = -0.668962242562, error = 0.00229524256225, error_ratio_quad = 109.466875089, error_ratio_linear = 0.501251464697
+Iter 7: x = -0.667815951335, error = 0.00114895133488, error_ratio_quad = 218.094370984, error_ratio_linear = 0.500579482871
+Iter 8: x = -0.667241686029, error = 0.000574686028994, error_ratio_quad = 435.338795356, error_ratio_linear = 0.500183090048
+Iter 9: x = -0.666954270964, error = 0.000287270963796, error_ratio_quad = 869.822130268, error_ratio_linear = 0.499874625975
+Iter 10: x = -0.666810492514, error = 0.000143492514181, error_ratio_quad = 1738.78458829, error_ratio_linear = 0.499502324511
+Iter 11: x = -0.666738585521, error = 7.15855207926e-05, error_ratio_quad = 3476.69584606, error_ratio_linear = 0.498879827992
+Iter 12: x = -0.666702627577, error = 3.56275770858e-05, error_ratio_quad = 6952.41856709, error_ratio_linear = 0.497692503893
+Iter 13: x = -0.666684647493, error = 1.76474931061e-05, error_ratio_quad = 13903.0615069, error_ratio_linear = 0.495332395565
+Iter 14: x = -0.666675657173, error = 8.65717314702e-06, error_ratio_quad = 27797.7766963, error_ratio_linear = 0.490561072612
+Iter 15: x = -0.66667116194, error = 4.16194039332e-06, error_ratio_quad = 55532.0426678, error_ratio_linear = 0.480750508583
+Iter 16: x = -0.666668914304, error = 1.91430389529e-06, error_ratio_quad = 110514.476555, error_ratio_linear = 0.459954664022
+Iter 17: x = -0.666667790476, error = 7.90476018309e-07, error_ratio_quad = 215708.337965, error_ratio_linear = 0.412931311613
+Iter 18: x = -0.666667228575, error = 2.2857548243e-07, error_ratio_quad = 365807.198656, error_ratio_linear = 0.289161817862
+Iter 19: x = -0.6666669476, error = 5.24003025415e-08, error_ratio_quad = 1002938.965, error_ratio_linear = 0.229247257774
+The root is -0.666667
+Multiplicity = 2
+The number of iterations is 19
+Linear Convergence
+
+
+Solves the problem f(x) = 0 using MODIFIED Newton's method
+Enter guess at root: -0.8
+Enter tolerance: 0.5e-6
+Enter maxIteration: 19
+Monitor iterations? (1/0): 1
+Guess: x = -0.8, error = 0.133333
+Iter 1: x = -0.671381240717, error = 0.00471424071747, error_ratio_quad = 0.265177366243, error_ratio_linear = 0.0353568937733
+Iter 2: x = -0.666679160379, error = 1.2160378728e-05, error_ratio_quad = 0.547171655198, error_ratio_linear = 0.00257949889638
+Iter 3: x = -0.666666666754, error = 3.33245969375e-07, error_ratio_quad = 2253.56818754, error_ratio_linear = 0.0274042426498
+Iter 4: x = -0.666666666754, error = 3.33245969375e-07, error_ratio_quad = 3000786.48176, error_ratio_linear = 1
+The root is -0.666667
+The number of iterations is 4
+Quadratic Convergence 
+
+
+
+Solves the problem f(x) = 0 using Newton's method
+Enter guess at root: 0.3
+Enter tolerance: 0.5e-6
+Enter maxIteration: 5
+Monitor iterations? (1/0): 1
+Guess: x = 0.3, error = 0.094817
+Iter 1: x = 0.158536585366, error = 0.0466464146341, error_ratio_quad = 5.18854810999, error_ratio_linear = 0.491962566145
+Iter 2: x = 0.203427665941, error = 0.00175533405871, error_ratio_quad = 0.806720777977, error_ratio_linear = 0.0376306319035
+Iter 3: x = 0.205178406415, error = 4.59358497154e-06, error_ratio_quad = 1.49084397753, error_ratio_linear = 0.00261692920999
+Iter 4: x = 0.205182924658, error = 7.53415233812e-08, error_ratio_quad = 3570.51521963, error_ratio_linear = 0.0164014650535
+Iter 5: x = 0.205182924689, error = 7.5310952391e-08, error_ratio_quad = 13267507.606, error_ratio_linear = 0.99959423451
+The root is 0.205183
+The number of iterations is 5
+Quadratic Convergence 
+
+
+Solves the problem f(x) = 0 using Newton's method
+Enter guess at root: 0.6
+Enter tolerance: 0.5e-6
+Enter maxIteration: 5
+Monitor iterations? (1/0): 1
+Guess: x = 0.6, error = 0.1
+Iter 1: x = 0.522364603482, error = 0.0223646034816, error_ratio_quad = 2.23646034816, error_ratio_linear = 0.223646034816
+Iter 2: x = 0.501764731434, error = 0.0017647314343, error_ratio_quad = 3.52822454018, error_ratio_linear = 0.0789073428352
+Iter 3: x = 0.500012773779, error = 1.27737788448e-05, error_ratio_quad = 4.10168353696, error_ratio_linear = 0.00723836987121
+Iter 4: x = 0.500000000679, error = 6.78509359808e-10, error_ratio_quad = 4.15831186358, error_ratio_linear = 5.31173561131e-05
+Iter 5: x = 0.5, error = 5.55111512313e-17, error_ratio_quad = 120.578131084, error_ratio_linear = 8.18133905285e-08
+The root is 0.500000
+The number of iterations is 5
+Quadratic Convergence 
+
+
+Solves the problem f(x) = 0 using Newton's method
+Enter guess at root: 1.0
+Enter tolerance: 0.5e-6
+Enter maxIteration: 10
+Monitor iterations? (1/0): 1
+Guess: x = 1, error = 0.176116
+Iter 1: x = 2.25, error = 1.073884, error_ratio_quad = 34.6226053685, error_ratio_linear = 6.09759476709
+Iter 2: x = 1.91133456366, error = 0.735218563657, error_ratio_quad = 0.637531606686, error_ratio_linear = 0.684634991914
+Iter 3: x = 1.64354716428, error = 0.467431164283, error_ratio_quad = 0.864738381992, error_ratio_linear = 0.635771711147
+Iter 4: x = 1.43968905717, error = 0.263573057172, error_ratio_quad = 1.20632877101, error_ratio_linear = 0.563875661941
+Iter 5: x = 1.29626278841, error = 0.120146788408, error_ratio_quad = 1.72945847316, error_ratio_linear = 0.455838657022
+Iter 6: x = 1.21214343666, error = 0.0360274366551, error_ratio_quad = 2.49579569084, error_ratio_linear = 0.299861836777
+Iter 7: x = 1.18050154512, error = 0.00438554512493, error_ratio_quad = 3.37875621462, error_ratio_linear = 0.121727925495
+Iter 8: x = 1.17619058173, error = 7.45817311587e-05, error_ratio_quad = 3.87779897706, error_ratio_linear = 0.0170062623993
+Iter 9: x = 1.17611557978, error = 4.20221497821e-07, error_ratio_quad = 75.5463257243, error_ratio_linear = 0.00563437575519
+Iter 10: x = 1.17611555735, error = 4.42645050835e-07, error_ratio_quad = 2506681.06215, error_ratio_linear = 1.0533612705
+The root is 1.176116
+The number of iterations is 10
+Quadratic Convergence 
+

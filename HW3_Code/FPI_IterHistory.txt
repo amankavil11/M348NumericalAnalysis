@@ -1,0 +1,62 @@
+Solves the problem g(x) = x using fixed point iteration
+g(x) = log(5*x - 6*(x^3) + 1)/2
+Enter guess at root: 0.7
+Enter tolerance: 0.0000005
+Enter maxIteration: 10
+Monitor iterations? (1/0): 1
+ Iter 0: x = 0.7, error = 0.193692, error ratio = 0
+ Iter 1: x = 0.446409, error = 0.0598993, error ratio = 0.30925
+ Iter 2: x = 0.496307, error = 0.0100008, error ratio = 0.16696
+ Iter 3: x = 0.505442, error = 0.000865642, error ratio = 0.0865572
+ Iter 4: x = 0.506246, error = 6.1627e-05, error ratio = 0.0711922
+ Iter 5: x = 0.506304, error = 4.05781e-06, error ratio = 0.0658447
+ Iter 6: x = 0.506308, error = 1.80472e-08, error ratio = 0.00444751
+ Iter 7: x = 0.506308, error = 2.6502e-07, error ratio = 14.6848
+The fixed point is 0.506308
+g(0.506308) = 0.506308 
+The number of iterations is 7
+
+
+Solves the problem g(x) = x using fixed point iteration
+g(x) = (6*x^3+exp(2*x)-1)/5
+Enter guess at root: 0.1
+Enter tolerance: 0.0000005
+Enter maxIteration: 15
+Monitor iterations? (1/0): 1
+ Iter 0: x = 0.1, error = 0.0999997, error ratio = 0
+ Iter 1: x = 0.0454806, error = 0.0454802, error ratio = 0.454804
+ Iter 2: x = 0.0191582, error = 0.0191578, error ratio = 0.421235
+ Iter 3: x = 0.00782041, error = 0.00782008, error ratio = 0.408192
+ Iter 4: x = 0.00315333, error = 0.003153, error ratio = 0.403193
+ Iter 5: x = 0.00126536, error = 0.00126502, error ratio = 0.401213
+ Iter 6: x = 0.000506786, error = 0.000506453, error ratio = 0.400351
+ Iter 7: x = 0.000202817, error = 0.000202485, error ratio = 0.399809
+ Iter 8: x = 8.11434e-05, error = 8.0811e-05, error ratio = 0.399096
+ Iter 9: x = 3.246e-05, error = 3.21276e-05, error ratio = 0.397565
+ Iter 10: x = 1.29844e-05, error = 1.2652e-05, error ratio = 0.393805
+ Iter 11: x = 5.19383e-06, error = 4.86143e-06, error ratio = 0.384242
+ Iter 12: x = 2.07754e-06, error = 1.74514e-06, error ratio = 0.358977
+ Iter 13: x = 8.31019e-07, error = 4.98619e-07, error ratio = 0.285718
+ Iter 14: x = 3.32408e-07, error = 7.97634e-12, error ratio = 1.59969e-05
+The fixed point is 3.32408e-07
+g(3.32408e-07) = 1.32963e-07 
+The number of iterations is 14
+
+Solves the problem g(x) = x using fixed point iteration
+g(x) = -1*sqrt((5*x-exp(2*x)+1)/(6*x))
+Enter guess at root: -0.1
+Enter tolerance: 0.0000005
+Enter maxIteration: 10
+Monitor iterations? (1/0): 1
+ Iter 0: x = -0.1, error = 0.718094, error ratio = 0
+ Iter 1: x = -0.728847, error = 0.089247, error ratio = 0.124283
+ Iter 2: x = -0.811104, error = 0.00698974, error ratio = 0.0783191
+ Iter 3: x = -0.817574, error = 0.000520214, error ratio = 0.0744253
+ Iter 4: x = -0.818055, error = 3.87912e-05, error ratio = 0.0745679
+ Iter 5: x = -0.818091, error = 3.11925e-06, error ratio = 0.0804112
+ Iter 6: x = -0.818094, error = 4.769e-07, error ratio = 0.152889
+ Iter 7: x = -0.818094, error = 2.81176e-07, error ratio = 0.589592
+The fixed point is -0.818094
+g(-0.818094) = -0.818094 
+The number of iterations is 7
+

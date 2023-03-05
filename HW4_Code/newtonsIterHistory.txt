@@ -1,0 +1,14 @@
+Solves the problem f(x) = 0 using Newton's method
+f(x) = 4x^3 + 2x -2
+Enter guess at root: 0.3
+Enter tolerance: 0.5e-6
+Enter maxIteration: 6
+Monitor iterations? (1/0): 1
+Guess: x = 0.3, error = 0.289755
+Iter 1: x = 0.719480519481, dx = 0.419480519481, error = 0.129725519481
+Iter 2: x = 0.606384636052, dx = -0.113095883428, error = 0.0166296360524
+Iter 3: x = 0.590065475834, dx = -0.0163191602188, error = 0.000310475833642
+Iter 4: x = 0.589754623108, dx = -0.000310852725175, error = 3.76891533094e-07
+Iter 5: x = 0.589754512301, dx = -1.10806994492e-07, error = 4.87698527563e-07
+The root is 0.589755
+The number of iterations is 5

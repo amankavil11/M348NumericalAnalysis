@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  FIXED POINT (PICARD) ITERATION METHOD
+%   
+%  Solves the problem
+%    g(x) = x
+%  using fixed point iteration. For a known true solution calculates
+%  errors.
+%   
+%  To run, type 'fixedPoint_err' (without quotes) on the command line.
+%  The main function is fpi:
+% 
+%  [state, x, errors] = fpi(@g, x0, tolerance, maxIteration, debug);
+%   
+%  Inputs:
+%    @g            Handle to function g
+%    x0            The initial guess at the fixed point
+%    tolerance     The convergence tolerance (must be > 0).
+%    maxIteration  The maximum number of iterations that can be taken.
+%    debug         Boolean for printing out information on every iteration.
+%  Outputs:
+%    x             The solution
+%    errors        Array with errors at each iteration
+%    iter          number of iterations to convergence
+%  Return:
+%    state         An error status code.
+%      SUCCESS     Sucessful termination.
+%      WONT_STOP   Error: Exceeded maximum number of iterations.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clc; clear all; close all;
+
+global SUCCESS WONT_STOP
+SUCCESS = 0; 
+WONT_STOP = 1;
+
+global x_true
+func = @(x) (-1850700/(0.67665*x^3 + 266.888*x^2 - 12747.9*x));
+x_true = 14.5725;
+
+
+
+% Input
+disp('Solves the problem g(x) = x using fixed point iteration')
+disp('g(x) = -1850700/(0.67665*x^3 + 266.888*x^2 - 12747.9*x)')
+x0 = input('Enter guess at root: ');
+tol = input('Enter tolerance: ');
+maxIter = input('Enter maxIteration: ');
+debug = input('Monitor iterations? (1/0): ');
+
+% Solve for fixed point
+
+[s, x, errors, iter] = fpi(func, x0, tol, maxIter, debug);
+
+% Report results
+format longe
+switch s
+    case SUCCESS
+        fprintf('The fixed point is %.6g\n', x)
+        fprintf('g(%.6g) = %.6g \n', x, func(x))
+        fprintf('The number of iterations is %d\n\n', iter)
+    case WONT_STOP
+        fprintf('ERROR: Failed to converge in %d iterations!\n', maxIter);
+    otherwise
+        disp('ERROR: Coding error!')
+        return
+end
+errors = errors(1:iter+1);
+disp('Press a button to continue ...')
+pause
+errors
+x = log(errors(1:end-1)); y = log(errors(2:end)); 
+plot(x,y,'bo-'); xlabel('log{(e_i)}'); ylabel('log{(e_{i+1})}'); grid on
+dx = x(2:end) - x(1:end-1); dy = y(2:end) - y(1:end-1);
+slope = dy./dx 
+format short
+
+
+function [state, x, errors, iter] = fpi(g, x0, tolerance, maxIteration, debug)
+
+global SUCCESS WONT_STOP x_true
+
+% format string
+   prec = 6; % number of significant digits to output
+   fmt = sprintf(' Iter %%d: x = %%.%dg, error = %%.%dg, error ratio = %%.%dg\n',prec,prec,prec);
+   
+
+   errors = zeros(maxIteration+1,1);
+   x = x0;
+   err = abs(x - x_true);
+   errors(1) = err;
+  
+   if (debug)
+       fprintf(fmt, 0, x, err,0);
+   end
+      
+
+  % FPI loop
+  for itn = 1:maxIteration
+      
+      gx = g(x);
+      dx = abs(x - gx);
+      x = gx;
+      err = abs(x - x_true);
+      errors(itn+1) = err; 
+      
+      if (debug)
+         fprintf(fmt, itn, x, err, (errors(itn+1)/errors(itn)));
+      end
+      
+      % Check error tolerance
+      if (dx <= tolerance*(abs(x)+1))
+          iter = itn; 
+          state = SUCCESS;
+          return
+      end
+      
+  end
+  state = WONT_STOP;
+  iter = itn; 
+  return 
+end
+
+
+
